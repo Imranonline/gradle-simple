@@ -1,0 +1,12 @@
+ext {
+    sdkVersions = [
+            analytics      : "2.1.0",
+            authentication : "8.8.4.1",
+            connection     : "1.14.1",
+            diagnostics    : "2.1.2",
+            common         : "1.12.2",
+            apptentive     : "5.4.1",
+            liveperson     : "4.0.0",
+            adobe          : "1.2.1"
+    ]
+}
