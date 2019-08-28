@@ -24,6 +24,11 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
     from javadoc.destinationDir
 }
 
+task resolveProperties << {
+    println "sampleOld -> ${project.hasProperty('versionName') ? project.property('versionName') : '1.2.3'}"
+    println "sampleNew -> ${project.findProperty('versionCode') ?: '100'}"
+}
+
 artifacts {
     archives sourcesJar
     archives javadocJar
